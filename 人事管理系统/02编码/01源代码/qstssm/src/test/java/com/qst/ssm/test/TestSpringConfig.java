@@ -17,7 +17,7 @@ public class TestSpringConfig {
     public void testServiceMethodMonitorLog() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         IDepService depService = (IDepService) context.getBean("depService");
-        Dep dep = new Dep(null, "A001", "总经理办公司");
+        Dep dep = new Dep(null, "A003", "总经理办公司");
         depService.insertDep(dep);
         context.close();
     }
